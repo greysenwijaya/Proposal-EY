@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proposal Usaha — Cafe & Resto EY</title>
+
+  <!-- ── Google Fonts ── -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- ── Font Awesome ── -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- ── Chart.js ── -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+
+  <!-- ── Stylesheets (urutan penting) ── -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════
+       PROGRESS BAR
+  ══════════════════════════════ -->
+  <div id="progress-bar"></div>
+
+  <!-- ══════════════════════════════
+       NAVBAR
+  ══════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-brand">
+      <i class="fa-solid fa-mug-hot"></i>
+      Cafe &amp; Resto <span>EY</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#market">Pasar</a></li>
+      <li><a href="#marketing">Pemasaran</a></li>
+      <li><a href="#partnership">Kerjasama</a></li>
+      <li><a href="#financial">Keuangan</a></li>
+      <li><a href="#timeline">Roadmap</a></li>
+      <li><a href="#cta">Kontak</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </nav>
+
+  <!-- MOBILE NAV DROPDOWN -->
+  <div class="nav-mobile" id="navMobile">
+    <a href="#about"       class="nav-mob-link">Tentang Kami</a>
+    <a href="#market"      class="nav-mob-link">Target Pasar</a>
+    <a href="#marketing"   class="nav-mob-link">Pemasaran</a>
+    <a href="#partnership" class="nav-mob-link">Kerjasama</a>
+    <a href="#financial"   class="nav-mob-link">Keuangan</a>
+    <a href="#timeline"    class="nav-mob-link">Roadmap</a>
+    <a href="#cta"         class="nav-mob-link">Kontak</a>
+  </div>
+
+  <!-- ══════════════════════════════
+       HERO
+  ══════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-inner reveal">
+      <div class="hero-badge">
+        <i class="fa-solid fa-circle-check"></i> Proposal Usaha Resmi 2026
+      </div>
+      <h1 class="hero-title">
+        Cafe &amp; Resto <em>EY</em><br/>
+        Tempat Kerja,<br/>
+        Tempat Rasa.
+      </h1>
+      <p class="hero-desc">
+        Menghadirkan ruang nyaman untuk bekerja, berkumpul, dan menikmati sajian berkualitas dengan harga terjangkau di jantung Kota Salatiga.
+      </p>
+      <div class="hero-meta">
+        <span class="hero-meta-item">
+          <i class="fa-solid fa-location-dot"></i> Jl. Cemara 26, Salatiga
+        </span>
+        <span class="hero-meta-item">
+          <i class="fa-solid fa-clock"></i> Buka 09.00 – 22.00
+        </span>
+        <span class="hero-meta-item">
+          <i class="fa-solid fa-wifi"></i> Free WiFi
+        </span>
+      </div>
+      <div class="btn-group">
+        <a href="#about" class="btn btn-primary">
+          <i class="fa-solid fa-book-open"></i> Baca Proposal
+        </a>
+        <button class="btn btn-outline" onclick="window.print()">
+          <i class="fa-solid fa-print"></i> Cetak / PDF
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       ABOUT
+  ══════════════════════════════ -->
+  <section id="about">
+    <p class="section-label reveal">Tentang Kami</p>
+    <h2 class="section-title reveal">Siapa Kami?</h2>
+    <div class="divider reveal"></div>
+    <div class="about-grid">
+
+      <!-- Kiri: deskripsi + visi misi -->
+      <div>
+        <p class="about-desc reveal">
+          <strong>Cafe &amp; Resto EY</strong> adalah usaha kuliner yang berlokasi di Jl. Cemara 26, Sidorejo, Salatiga. Kami dirancang sebagai ruang multifungsi — tempat yang pas untuk mahasiswa mengerjakan tugas, profesional bekerja, maupun keluarga bersantai bersama.
+        </p>
+        <div class="vm-card reveal">
+          <h4><i class="fa-solid fa-eye"></i> Visi</h4>
+          <p>Menjadi cafe &amp; resto yang nyaman sebagai tempat bekerja dan ruang yang aman bagi setiap pengunjung di Salatiga dan sekitarnya.</p>
+        </div>
+        <div class="vm-card reveal">
+          <h4><i class="fa-solid fa-bullseye"></i> Misi</h4>
+          <p>Menyajikan makanan dan minuman berkualitas tinggi dengan harga yang terjangkau, memberikan layanan ramah, dan menciptakan suasana yang nyaman dan produktif.</p>
+        </div>
+      </div>
+
+      <!-- Kanan: stats + keunggulan -->
+      <div>
+        <div class="stats-row reveal">
+          <div class="stat-box">
+            <div class="num">09.00</div>
+            <div class="lbl">Jam Buka</div>
+          </div>
+          <div class="stat-box">
+            <div class="num">22.00</div>
+            <div class="lbl">Jam Tutup</div>
+          </div>
+          <div class="stat-box">
+            <div class="num">3+</div>
+            <div class="lbl">Segmen Pasar</div>
+          </div>
+        </div>
+        <div class="keunggulan-box reveal">
+          <h4>Keunggulan Kami</h4>
+          <ul class="keunggulan-list">
+            <li><i class="fa-solid fa-check"></i> Lokasi strategis di Salatiga, dekat area kampus</li>
+            <li><i class="fa-solid fa-check"></i> Suasana cozy dengan fasilitas WiFi cepat</li>
+            <li><i class="fa-solid fa-check"></i> Harga menu terjangkau di kantong</li>
+            <li><i class="fa-solid fa-check"></i> Ruang fleksibel: meja individu, grup, &amp; area keluarga</li>
+            <li><i class="fa-solid fa-check"></i> Tersedia colokan listrik di setiap meja</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       MARKET
+  ══════════════════════════════ -->
+  <section id="market">
+    <p class="section-label reveal">Target Pasar</p>
+    <h2 class="section-title reveal">Siapa Pengunjung Kami?</h2>
+    <div class="divider reveal"></div>
+    <p class="section-sub reveal">Kami menyasar tiga segmen utama yang memiliki kebutuhan berbeda namun terpenuhi dalam satu tempat.</p>
+
+    <div class="target-grid">
+      <div class="target-card reveal">
+        <div class="target-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <h4>Mahasiswa</h4>
+        <p>Butuh tempat tenang untuk rapat organisasi, mengerjakan tugas, skripsi, atau sekadar nongkrong santai dengan WiFi stabil dan colokan listrik.</p>
+      </div>
+      <div class="target-card reveal">
+        <div class="target-icon"><i class="fa-solid fa-people-group"></i></div>
+        <h4>Masyarakat Umum</h4>
+        <p>Pekerja, freelancer, dan warga Salatiga yang mencari tempat makan enak dan nyaman untuk break siang atau pertemuan informal.</p>
+      </div>
+      <div class="target-card reveal">
+        <div class="target-icon"><i class="fa-solid fa-house-heart"></i></div>
+        <h4>Keluarga</h4>
+        <p>Orang tua yang ingin makan bersama anak dalam suasana bersih, aman, dan ramah keluarga dengan menu pilihan yang beragam.</p>
+      </div>
+    </div>
+
+    <div class="chart-wrap reveal">
+      <h3>Estimasi Komposisi Pengunjung (%)</h3>
+      <div class="chart-donut-inner">
+        <canvas id="marketChart"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       MARKETING
+  ══════════════════════════════ -->
+  <section id="marketing">
+    <p class="section-label reveal">Strategi Pemasaran</p>
+    <h2 class="section-title reveal">Bagaimana Kami Menjangkau Pelanggan?</h2>
+    <div class="divider reveal"></div>
+    <div class="mkt-grid">
+      <div class="mkt-card reveal">
+        <i class="fa-brands fa-instagram"></i>
+        <h4>Media Sosial</h4>
+        <p>Konten harian di Instagram &amp; TikTok: foto menu, behind-the-scenes, promo, dan reels suasana cafe yang aesthetic.</p>
+      </div>
+      <div class="mkt-card reveal">
+        <i class="fa-solid fa-bullhorn"></i>
+        <h4>Pemasaran Manual</h4>
+        <p>Brosur, flyer, dan banner di area kampus, kos-kosan, dan perumahan sekitar Salatiga untuk jangkauan langsung.</p>
+      </div>
+      <div class="mkt-card reveal">
+        <i class="fa-solid fa-users"></i>
+        <h4>Komunitas</h4>
+        <p>Kolaborasi dengan komunitas mahasiswa, komunitas bisnis lokal, dan event organizer untuk event co-hosting di cafe.</p>
+      </div>
+      <div class="mkt-card reveal">
+        <i class="fa-solid fa-star"></i>
+        <h4>Review &amp; Word of Mouth</h4>
+        <p>Program loyalitas pelanggan, diskon referral, dan program "Bring a Friend" untuk mendorong promosi organik.</p>
+      </div>
+      <div class="mkt-card reveal">
+        <i class="fa-solid fa-motorcycle"></i>
+        <h4>Ojek Online</h4>
+        <p>Bergabung dengan GrabFood &amp; GoFood untuk menjangkau pelanggan yang ingin memesan dari rumah atau kantor.</p>
+      </div>
+      <div class="mkt-card reveal">
+        <i class="fa-solid fa-tags"></i>
+        <h4>Promo Berkala</h4>
+        <p>Happy hour, promo hari Senin, promo pelajar, dan bundling menu spesial setiap bulan untuk meningkatkan kunjungan.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       PARTNERSHIP
+  ══════════════════════════════ -->
+  <section id="partnership">
+    <p class="section-label reveal">Sistem Kerjasama</p>
+    <h2 class="section-title reveal">Mari Bergabung Bersama Kami</h2>
+    <div class="divider reveal"></div>
+    <div class="partner-box reveal">
+      <div>
+        <h2>Profit Sharing</h2>
+        <p>Sistem kerjasama kami didasarkan pada prinsip transparansi, kepercayaan, dan keuntungan bersama. Setiap mitra mendapatkan porsi keuntungan sesuai kontribusi dan kesepakatan awal.</p>
+        <ul class="partner-list">
+          <li><i class="fa-solid fa-circle-check"></i> Bagi hasil keuntungan sesuai kesepakatan bersama yang tertulis</li>
+          <li><i class="fa-solid fa-circle-check"></i> Laporan keuangan transparan setiap bulan kepada investor/mitra</li>
+          <li><i class="fa-solid fa-circle-check"></i> Musyawarah rutin evaluasi kinerja dan pengembangan usaha</li>
+          <li><i class="fa-solid fa-circle-check"></i> Perjanjian kerjasama resmi dan terdokumentasi dengan baik</li>
+          <li><i class="fa-solid fa-circle-check"></i> Fleksibel: mitra aktif maupun mitra modal (investor pasif)</li>
+        </ul>
+      </div>
+      <div class="partner-highlight">
+        <div class="big">ROI</div>
+        <p class="partner-highlight__desc">Proyeksi Return on Investment</p>
+        <div class="roi-num">6–12</div>
+        <p class="roi-desc">Bulan estimasi balik modal<br/>(bergantung skala investasi)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       FINANCIAL
+  ══════════════════════════════ -->
+  <section id="financial">
+    <p class="section-label reveal">Rencana Keuangan</p>
+    <h2 class="section-title reveal">Estimasi Anggaran &amp; Proyeksi</h2>
+    <div class="divider reveal"></div>
+
+    <div class="fin-table-wrap reveal">
+      <table>
+        <thead>
+          <tr>
+            <th>Keterangan</th>
+            <th>Kategori</th>
+            <th>Estimasi (Rp)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>RAB Renovasi &amp; Dekorasi Interior</td>
+            <td><span class="badge-cat badge-modal">Modal Awal</span></td>
+            <td>34.731.000</td>
+          </tr>
+          <tr>
+            <td>Peralatan Dapur &amp; Kafe</td>
+            <td><span class="badge-cat badge-modal">Modal Awal</span></td>
+            <td>Data belum di input</td>
+          </tr>
+          <tr>
+            <td>Meja, Kursi, &amp; Furnitur</td>
+            <td><span class="badge-cat badge-modal">Modal Awal</span></td>
+            <td>34.731.000</td>
+          </tr>
+          <tr>
+            <td>Instalasi WiFi &amp; Repeater</td>
+            <td><span class="badge-cat badge-modal">Modal Awal</span></td>
+            <td>500.000</td>
+          </tr>
+          <tr>
+            <td>Bahan Baku Bulan Pertama</td>
+            <td><span class="badge-cat badge-ops">Operasional</span></td>
+            <td>Data belum di input</td>
+          </tr>
+          <tr>
+            <td>Listrik Operasional/td>
+            <td><span class="badge-cat badge-ops">Operasional</span></td>
+            <td>Data belum di input</td>
+          </tr>
+          <tr>
+            <td>Sewa Tempat / Bulan</td>
+            <td><span class="badge-cat badge-ops">Operasional</span></td>
+            <td>Data belum di input</td>
+          </tr>
+          <tr>
+            <td>Marketing &amp; Promosi Awal</td>
+            <td><span class="badge-cat badge-ops">Operasional</span></td>
+            <td>Data belum di input</td>
+          </tr>
+          <tr>
+            <td>Proyeksi Pendapatan / Bulan</td>
+            <td><span class="badge-cat badge-rev">Pendapatan</span></td>
+            <td>Data belum di input</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2"><strong>Total Modal Awal</strong></td>
+            <td><strong>~37.731.000</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <div class="chart-wrap reveal chart-wrap-bar">
+      <h3>Proyeksi Pendapatan 6 Bulan Pertama (Rp...Juta)</h3>
+      <canvas id="revenueChart" height="100"></canvas>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       TIMELINE
+  ══════════════════════════════ -->
+  <section id="timeline">
+    <p class="section-label reveal">Roadmap</p>
+    <h2 class="section-title reveal">Tahapan Pengembangan</h2>
+    <div class="divider reveal"></div>
+    <div class="timeline-track">
+      <div class="tl-item done reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-phase">Fase 1 · Minggu 1–2</div>
+        <h4>Persiapan &amp; Setup</h4>
+        <p>Finalisasi lokasi, renovasi interior, pengadaan peralatan, rekrutmen karyawan awal, dan pengurusan izin usaha.</p>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-phase">Fase 2 · Minggu 2–3</div>
+        <h4>Soft Opening</h4>
+        <p>Uji coba menu, pelatihan staf, promosi awal di media sosial dan komunitas, trial run dengan harga promo untuk pelanggan perdana.</p>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-phase">Fase 3 · Minggu 3–6</div>
+        <h4>Grand Opening &amp; Stabilisasi</h4>
+        <p>Grand opening resmi dengan event kecil, aktivasi GrabFood/GoFood, kampanye media sosial penuh, dan evaluasi menu berdasarkan feedback.</p>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-phase">Fase 4 · Minggu 6–12</div>
+        <h4>Pertumbuhan &amp; Ekspansi</h4>
+        <p>Optimasi operasional, penambahan varian menu, program loyalitas pelanggan, dan evaluasi potensi cabang kedua.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       CTA
+  ══════════════════════════════ -->
+  <section id="cta">
+    <p class="section-label reveal">Hubungi Kami</p>
+    <h2 class="section-title reveal">Tertarik Bergabung?</h2>
+    <div class="divider"></div>
+    <p class="section-sub reveal">Kami terbuka untuk diskusi kerjasama, investasi, dan kolaborasi. Hubungi kami dan mari wujudkan Cafe &amp; Resto EY bersama.</p>
+    <div class="cta-contacts reveal">
+      <span class="cta-contact-item">
+        <i class="fa-solid fa-location-dot"></i>
+        Jl. Cemara 26, Sidorejo, Salatiga, Jawa Tengah
+      </span>
+      <span class="cta-contact-item">
+        <i class="fa-brands fa-instagram"></i>
+        @caferesto.ey
+      </span>
+      <span class="cta-contact-item">
+        <i class="fa-brands fa-whatsapp"></i>
+        WhatsApp (hubungi kami)
+      </span>
+    </div>
+    <div class="btn-group btn-group--center reveal">
+      <a href="https://wa.me/6281223535541" class="btn btn-light" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp"></i> Chat via WhatsApp
+      </a>
+      <button class="btn btn-ghost" onclick="window.print()">
+        <i class="fa-solid fa-file-pdf"></i> Download PDF
+      </button>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       FOOTER
+  ══════════════════════════════ -->
+  <footer>
+    <p>© 2026 Cafe &amp; Resto EY · Jl. Cemara 26, Salatiga · Proposal Usaha</p>
+  </footer>
+
+  <!-- ── JavaScript (load di akhir body) ── -->
+  <script src="js/navbar.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/charts.js"></script>
+
+</body>
+</html> 
